@@ -7,43 +7,25 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.6;
             color: #2d3748;
             background: #fff;
-            padding: 0;
-            margin: 0;
         }
         
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 40px 30px;
-            background: white;
         }
         
         @media print {
-            body {
-                font-size: 11pt;
-            }
-            .container {
-                max-width: 100%;
-                padding: 0;
-            }
-            .section {
-                page-break-inside: avoid;
-            }
-            a {
-                color: #2d3748 !important;
-                text-decoration: none !important;
-            }
+            body { font-size: 11pt; }
+            .container { max-width: 100%; padding: 0; }
+            a { color: #2d3748 !important; text-decoration: none !important; }
         }
         
         .header {
@@ -70,31 +52,15 @@
         
         .contact-info {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             gap: 20px;
             font-size: 14px;
             color: #4a5568;
         }
         
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
+        .contact-item a { color: #2563eb; text-decoration: none; }
         
-        .contact-item a {
-            color: #2563eb;
-            text-decoration: none;
-        }
-        
-        .contact-item a:hover {
-            text-decoration: underline;
-        }
-        
-        .section {
-            margin-bottom: 30px;
-        }
+        .section { margin-bottom: 35px; }
         
         .section-title {
             font-size: 18px;
@@ -107,9 +73,7 @@
             letter-spacing: 0.5px;
         }
         
-        .entry {
-            margin-bottom: 20px;
-        }
+        .entry { margin-bottom: 25px; }
         
         .entry-header {
             display: flex;
@@ -136,116 +100,23 @@
             margin-bottom: 8px;
             font-weight: 500;
         }
-        
-        .entry-description {
-            font-size: 14px;
-            color: #4a5568;
-            line-height: 1.6;
+
+        .entry-compact {
+            margin-bottom: 12px;
         }
         
-        ul {
-            margin-left: 20px;
-            margin-top: 5px;
-        }
+        ul { margin-left: 20px; margin-top: 5px; }
+        li { font-size: 14px; color: #4a5568; margin-bottom: 5px; }
         
-        li {
-            font-size: 14px;
-            color: #4a5568;
-            margin-bottom: 4px;
-        }
-        
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-        }
-        
-        .skill-category {
-            margin-bottom: 10px;
-        }
-        
-        .skill-category-title {
-            font-size: 14px;
-            font-weight: 600;
-            color: #2d3748;
-            margin-bottom: 5px;
-        }
-        
-        .skill-items {
-            font-size: 13px;
-            color: #4a5568;
-            line-height: 1.5;
-        }
-        
-        .highlight {
-            background: linear-gradient(transparent 60%, #fef3c7 60%);
-            padding: 0 2px;
-        }
-        
-        .badge {
-            display: inline-block;
-            padding: 2px 8px;
-            background: #edf2f7;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 500;
-            color: #4a5568;
-            margin-right: 5px;
-        }
-        
-        .achievement {
-            color: #2563eb;
-            font-weight: 500;
-        }
-        
-        strong {
-            font-weight: 600;
-            color: #1a202c;
-        }
-        
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 10px;
-            margin-top: 10px;
-        }
-        
-        .project-item {
-            font-size: 13px;
-            color: #4a5568;
-            padding-left: 15px;
-            position: relative;
-        }
-        
-        .project-item:before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #2563eb;
-        }
-        
-        .interests {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
-        }
-        
-        .interest-item {
-            padding: 5px 12px;
-            background: #f7fafc;
-            border: 1px solid #cbd5e0;
-            border-radius: 20px;
-            font-size: 13px;
-            color: #4a5568;
-        }
+        .achievement { color: #2563eb; font-weight: 500; }
+        strong { font-weight: 600; color: #2d3748; }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>DAEHO BANG</h1>
-            <div class="tagline">M.S. Student in Artificial Intelligence | LLM & RAG Systems Researcher</div>
+            <div class="tagline">M.S. Student in AI | Specializing in Commercial LLM Applications & Multimodal Systems</div>
             <div class="contact-info">
                 <div class="contact-item">📧 <a href="mailto:dkrlwnstn1@gmail.com">dkrlwnstn1@gmail.com</a></div>
                 <div class="contact-item">🔗 <a href="https://www.linkedin.com/in/대호-방-a1556b236" target="_blank">LinkedIn</a></div>
@@ -254,203 +125,158 @@
         
         <div class="section">
             <h2 class="section-title">Education</h2>
-            
             <div class="entry">
                 <div class="entry-header">
                     <div class="entry-title">Master of Science in Artificial Intelligence</div>
                     <div class="entry-date">Mar 2024 - Feb 2026 (Expected)</div>
                 </div>
                 <div class="entry-subtitle">Kyungpook National University, Daegu, Korea</div>
-                <div class="entry-description">
-                    • Deep Learning Theory & Applications Lab (Advisor: Prof. Jaemo Kang)<br>
-                    • Research Focus: Large Language Models, RAG Systems, Split Computing<br>
-                    • Relevant Coursework: Deep Learning, Natural Language Processing, Machine Learning
-                </div>
+                <div class="entry-subtitle">Deep Learning Theory & Applications Lab (Advisor: Prof. Jaemo Kang)</div>
             </div>
-            
             <div class="entry">
                 <div class="entry-header">
                     <div class="entry-title">Bachelor of Science in Artificial Intelligence</div>
                     <div class="entry-date">Mar 2020 - Feb 2024</div>
                 </div>
                 <div class="entry-subtitle">Daegu University, Daegu, Korea | <span class="achievement">GPA: 4.03/4.5</span></div>
-                <div class="entry-description">
-                    • Real-time and Embedded Systems Lab (Jun 2021 - Feb 2024)<br>
-                    • Academic Excellence Awards (4 semesters)<br>
-                    • <span class="achievement">Best Project Award</span> - Student Work Contest (Nov 2022)
-                </div>
             </div>
         </div>
         
         <div class="section">
-            <h2 class="section-title">Research Experience</h2>
+            <h2 class="section-title">Industry Experience & Projects</h2>
             
             <div class="entry">
                 <div class="entry-header">
-                    <div class="entry-title">Graduate Research Assistant</div>
+                    <div class="entry-title">AI Memorial Avatar System</div>
+                    <div class="entry-date">Delivered Sep 2025</div>
+                </div>
+                <div class="entry-subtitle">Client: Bongandang Edena (Memorial Park)</div>
+                <ul>
+                    <li>Developed and deployed a <strong>real-time conversational AI system</strong> that recreates a deceased person's persona.</li>
+                    <li>Integrated an end-to-end pipeline: <strong>STT (Speech-to-Text) → LLM (Persona Injection) → TTS → Talking Head Avatar</strong>.</li>
+                    <li>Successfully commercialized and installed onsite, enabling visitors to have interactive dialogue with the digital twin.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div class="entry-title">Multimodal Similarity Analysis Engine</div>
+                    <div class="entry-date">Delivered Dec 2025</div>
+                </div>
+                <div class="entry-subtitle">Client: WiseStone Inc.</div>
+                <ul>
+                    <li>Engineered a quantification system that calculates similarity scores across heterogeneous data inputs (Image, Video, Text).</li>
+                    <li>Designed <strong>multimodal embedding algorithms</strong> to process and compare diverse media formats for quality assurance testing.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div class="entry-title">VLM-based Intelligent OCR Solution</div>
+                    <div class="entry-date">Oct 2025 - Present</div>
+                </div>
+                <div class="entry-subtitle">Role: Technical R&D Advisor | Client: G-Mission Inc.</div>
+                <ul>
+                    <li>Advising on the architecture of a <strong>Vision-Language Model (VLM)</strong> system for complex document understanding.</li>
+                    <li>Optimizing OCR performance for non-standard layouts using state-of-the-art multimodal approaches.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div class="entry-title">Manufacturing FMEA-RAG System</div>
+                    <div class="entry-date">In Progress</div>
+                </div>
+                <div class="entry-subtitle">Client: Toyota (Battery Manufacturing Division)</div>
+                <ul>
+                    <li>Developing a <strong>Retrieval-Augmented Generation (RAG)</strong> system specifically for Failure Mode and Effects Analysis (FMEA).</li>
+                    <li>Constructing a specialized vector database from engineering technical documents to automate risk detection workflows.</li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-header">
+                    <div class="entry-title">Automated Essay Feedback System</div>
+                    <div class="entry-date">2024</div>
+                </div>
+                <div class="entry-subtitle">Client: Park Ki-ho Essay Academy (Daechi-dong)</div>
+                <ul>
+                    <li>Fine-tuned <strong>GPT-4o</strong> to replicate the specific grading style of professional instructors.</li>
+                    <li>Built a web-based solution that provides instant, detailed feedback on student essays, reducing grading workload by over 60%.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Academic Research</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <div class="entry-title">Split Computing for Efficient LLM Inference</div>
                     <div class="entry-date">Mar 2024 - Present</div>
                 </div>
-                <div class="entry-subtitle">Deep Learning Theory & Applications Lab, KNU</div>
+                <div class="entry-subtitle">Graduate Research Assistant</div>
                 <ul>
-                    <li><strong>Split Computing for LLMs</strong>: Developed KV Cache compression using Asymmetric Top-K Filtering for efficient server-client LLM deployment, achieving 30% memory reduction while maintaining model accuracy</li>
-                    <li><strong>Custom Transformers Implementation</strong>: Modified LLaMA2 and Phi3 modeling files for specialized forward pass implementation supporting split inference</li>
-                    <li><strong>Memory Optimization</strong>: Created dynamic KV Cache monitoring system preventing OOM errors in edge devices (Jetson Orin 16GB)</li>
-                </ul>
-            </div>
-            
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Undergraduate Research Intern</div>
-                    <div class="entry-date">Feb 2022 - Jan 2024</div>
-                </div>
-                <div class="entry-subtitle">Real-time and Embedded Systems Lab, Daegu University</div>
-                <ul>
-                    <li><strong>Real-Time Locating System</strong>: Built indoor positioning system using UWB modules (DWM3000)</li>
-                    <li>Implemented IEEE 802.15.4z Standard for triangulation-based positioning</li>
-                    <li>Published technical report in Journal of Information and Communication Research</li>
+                    <li><strong>Research</strong>: Developing "Asymmetric Top-K Filtering" for KV Cache compression in server-client architectures.</li>
+                    <li><strong>Edge Optimization</strong>: Ported and optimized LLaMA2 and Phi3 models to run efficiently on <strong>Jetson Orin (Edge AI)</strong> devices.</li>
+                    <li><strong>Achievement</strong>: Reduced inference latency by 4.4x in bandwidth-constrained environments.</li>
                 </ul>
             </div>
         </div>
-        
+
         <div class="section">
-            <h2 class="section-title">Industry Projects</h2>
-            
-            <div class="entry">
+            <h2 class="section-title">Honors & Professional Development</h2>
+            <div class="entry-compact">
                 <div class="entry-header">
-                    <div class="entry-title">AI Avatar Dialogue System</div>
+                    <div class="entry-title">LG Aimers / Data Intelligence</div>
                     <div class="entry-date">2024</div>
                 </div>
-                <div class="entry-subtitle">Commercial Project for Memorial Service Application</div>
-                <div class="entry-description">
-                    • Built end-to-end real-time pipeline: STT → LLM → TTS → TalkingHead<br>
-                    • Achieved complete pipeline latency under 7 seconds from speech input to avatar response<br>
-                    • Deployed production-ready system handling concurrent users
-                </div>
+                <div class="entry-subtitle">LG AI Research</div>
+                <div class="entry-description">• Completed Industrial AI practical competency course utilizing real-world data</div>
             </div>
             
-            <div class="entry">
+            <div class="entry-compact">
                 <div class="entry-header">
-                    <div class="entry-title">Domain-Specific RAG Systems</div>
-                    <div class="entry-date">2023 - 2024</div>
+                    <div class="entry-title">Google Machine Learning Bootcamp</div>
+                    <div class="entry-date">2023</div>
                 </div>
-                <div class="entry-subtitle">Multiple Commercial Projects</div>
-                <ul>
-                    <li><strong>Medical Gait Analysis RAG</strong>: Multi-user system using vLLM on WSL for 5+ concurrent users, 3-GPU optimization</li>
-                    <li><strong>Latin/Classical Chinese Dictionary RAG</strong>: Metadata-filtered vector search with ChromaDB</li>
-                    <li><strong>Educational Essay Grading</strong>: Fine-tuned GPT-4o for automated feedback system</li>
-                    <li><strong>Document-Selective RAG</strong>: User-controlled document scope for targeted information retrieval</li>
-                </ul>
+                <div class="entry-description">• Completed Deep Learning theory and practical projects (TensorFlow/Keras)</div>
             </div>
-            
-            <div class="entry">
+
+            <div class="entry-compact">
                 <div class="entry-header">
-                    <div class="entry-title">LLM Fine-tuning Projects</div>
-                    <div class="entry-date">2024</div>
+                    <div class="entry-title">Hyundai H-Mobility Class</div>
+                    <div class="entry-date">2023</div>
                 </div>
-                <ul>
-                    <li><strong>Essay Assessment LLM</strong>: Fine-tuned GPT-4o for educational institution in Gangnam</li>
-                    <li><strong>Mental Health Support LLM</strong>: Fine-tuned HyperCLOVA X SEED model</li>
-                </ul>
+                <div class="entry-description">• Completed AI technology education for autonomous driving & mobility industry</div>
             </div>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <div class="skill-category-title">Programming Language</div>
-                    <div class="skill-items">Python</div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-category-title">Databases</div>
-                    <div class="skill-items">ChromaDB (Vector Database), Neo4j (Graph Database)</div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-category-title">LLM & NLP</div>
-                    <div class="skill-items">KV Cache Optimization, Split Computing, RAG Systems, Fine-tuning, GraphRAG</div>
-                </div>
-                <div class="skill-category">
-                    <div class="skill-category-title">Edge Computing Experience</div>
-                    <div class="skill-items">Jetson Orin deployment and optimization</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-title">Publications & Competitions</h2>
-            
-            <div class="entry">
+
+            <div class="entry-compact">
                 <div class="entry-header">
-                    <div class="entry-title">Samsung SAIT LLM Lightweighting Challenge</div>
-                    <div class="entry-date">2024</div>
-                </div>
-                <div class="entry-description">
-                    • Developed memory monitoring system for Phi3-mini on Jetson Orin 16GB<br>
-                    • Achieved stable inference without quantization through dynamic memory management
-                </div>
-            </div>
-            
-            <div class="entry">
-                <div class="entry-header">
-                    <div class="entry-title">Publications</div>
+                    <div class="entry-title">Best Capstone Design Engineering Award (1st Place)</div>
                     <div class="entry-date">2022</div>
                 </div>
-                <div class="entry-description">
-                    • Journal of Information and Communication Research Vol. 17 No. 2 - UWB-based RTLS<br>
-                    • The 34th Joint Conference on Communications and Information - Poster Presentation
-                </div>
+                <div class="entry-subtitle">Daegu University</div>
+                <div class="entry-description">• Topic: UWB-based Indoor Location Tracking System</div>
             </div>
-            
-            <div class="entry">
+
+            <div class="entry-compact">
                 <div class="entry-header">
-                    <div class="entry-title">Research Contributions</div>
-                    <div class="entry-date">2024</div>
+                    <div class="entry-title">KICS Summer Comprehensive Conference</div>
+                    <div class="entry-date">2022</div>
                 </div>
-                <div class="entry-description">
-                    • <strong>Split Computing Framework for Large Language Models</strong> - Second author<br>
-                    • Implemented Asymmetric Top-K Filtering (ATKF) for KV Cache compression<br>
-                    • Conducted comprehensive experiments across vision and NLP benchmarks<br>
-                    • Achieved 4.4× latency reduction and 10× bandwidth savings in multi-device scenarios
-                </div>
+                <div class="entry-description">• Poster Presentation: Performance Analysis of UWB-based RTLS</div>
             </div>
         </div>
         
         <div class="section">
-            <h2 class="section-title">Academic Projects</h2>
-            <div class="project-grid">
-                <div class="project-item">Face Recognition & Auto Make-up (PyTorch)</div>
-                <div class="project-item">Sentiment Analysis using KoBERT</div>
-                <div class="project-item">Lane Detection for Autonomous Driving</div>
-                <div class="project-item">Music Generation using MuseGAN</div>
-                <div class="project-item">Style Transfer with CycleGAN</div>
-                <div class="project-item">GraphML for AWS SIEM (Neo4j)</div>
-                <div class="project-item">Cryptocurrency Price Prediction</div>
-                <div class="project-item">Smart Black-Box System</div>
-            </div>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-title">Professional Development</h2>
-            
+            <h2 class="section-title">Teaching & Outreach</h2>
             <div class="entry">
-                <div class="entry-description">
-                    • <strong>Google Machine Learning Bootcamp</strong> (2023)<br>
-                    • <strong>Language Proficiency</strong>: Korean (Native), English (Professional - TOEIC 875)<br>
-                    • <strong>Conference Participation</strong>: AI Expo Korea 2023, World AI Fair 2022, AI Convergence Symposium 2022<br>
-                    • <strong>Industry Training</strong>: Hyundai H-Mobility Class 2023
-                </div>
-            </div>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-title">Research Interests</h2>
-            <div class="interests">
-                <div class="interest-item">Efficient LLM Inference</div>
-                <div class="interest-item">Retrieval-Augmented Generation</div>
-                <div class="interest-item">Knowledge Graph Integration</div>
-                <div class="interest-item">Edge AI & Split Computing</div>
-                <div class="interest-item">NLP Applications</div>
-                <div class="interest-item">Human-AI Interaction</div>
+                <ul>
+                    <li><strong>GenAI Education Instructor</strong>: Hanam Eungaram Middle School (Dec 22, 2025)</li>
+                    <li><strong>AI Bootcamp Instructor</strong>: Incheon Yale High School (Dec 17-18, 2025)</li>
+                    <li><strong>Digital Literacy Lecturer</strong>: Hanam Gamil Middle School (Jul 10, 2025)</li>
+                    <li><strong>Hackathon Mentor</strong>: Icheon Yangjeong Girls' High School (May 23-24, 2025)</li>
+                </ul>
             </div>
         </div>
     </div>
